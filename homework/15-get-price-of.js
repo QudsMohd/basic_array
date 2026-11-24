@@ -5,6 +5,11 @@
 // - If there is no such product, return null.
 
 function getPriceOf(products, name) {
+  let pName= products.find((product) => product.name === name);
+  if (pName){
+    return pName.price;
+  }
+  return null;
   // your code
 }
 

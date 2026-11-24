@@ -5,6 +5,10 @@
 // - Nobody matches: return [].
 
 function getNamesFromCity(users, city) {
+  let result =[];
+  users.filter((user) => user.city === city).forEach((user) => result.push(user.name));
+
+  return result;
   // your code
 }
 

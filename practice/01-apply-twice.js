@@ -5,6 +5,7 @@
 // - applyTwice(3, (n) => n * 2): 3 becomes 6, then 12.
 
 function applyTwice(value, action) {
+  return action(action(value));
   // your code
 }
 

@@ -6,6 +6,10 @@
 
 function findUser(users, name) {
   // your code
+  
+   return users.find((user) => user.name === name);
+  
+
 }
 
 const users = [

@@ -5,6 +5,8 @@
 
 function getUsersFromCity(users, city) {
   // your code
+   return users.filter((user) => user.city === city);
+
 }
 
 const users = [

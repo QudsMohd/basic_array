@@ -6,6 +6,12 @@
 
 function sumAdultAges(users) {
   // your code
+  let total =0;
+  let uAge= users.filter((user) => user.age>=18);
+  uAge.forEach((user) => {
+    total=total+user.age;
+  });
+  return total;
 }
 
 const users = [

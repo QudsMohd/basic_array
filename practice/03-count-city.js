@@ -6,6 +6,14 @@
 
 function countCity(users, city) {
   // your code
+  let count= 0;
+  users.forEach((user) => {
+    if (user.city === city){
+      count =count+1;
+    }
+    
+  });
+  return count;
 }
 
 const users = [

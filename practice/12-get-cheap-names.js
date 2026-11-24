@@ -6,6 +6,7 @@
 
 function getCheapNames(products, limit) {
   // your code
+  return products.filter(product => product.price <limit).map(product => product.name);
 }
 
 const products = [
